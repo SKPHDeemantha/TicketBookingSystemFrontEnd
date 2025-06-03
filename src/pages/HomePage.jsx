@@ -1,15 +1,14 @@
 // Homepage.jsx
-import { motion } from 'framer-motion';
-import { Film } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Film } from "lucide-react";
 
 export default function Homepage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center px-4">
-      
       {/* Hero Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: -40 }} 
-        animate={{ opacity: 1, y: 0 }} 
+      <motion.div
+        initial={{ opacity: 0, y: -40 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="text-center mb-8"
       >
@@ -23,7 +22,7 @@ export default function Homepage() {
 
       {/* 3D Movie Card */}
       <div className="[perspective:800px] mb-10">
-        <motion.div 
+        <motion.div
           initial={{ rotateY: 0 }}
           animate={{ rotateY: 360 }}
           transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
@@ -41,7 +40,7 @@ export default function Homepage() {
       </div>
 
       {/* Action Buttons */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
