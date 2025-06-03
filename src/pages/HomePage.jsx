@@ -47,16 +47,16 @@ export default function Homepage() {
         transition={{ delay: 0.3 }}
         className="w-full max-w-md grid grid-cols-1 sm:grid-cols-2 gap-4"
       >
-        <button className="bg-purple-600 hover:bg-purple-700 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
+        <button className="bg-gradient-to-t from-violet-600 to-green-300 hover:bg-purple-700 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
           View Movies
         </button>
-        <button className="bg-pink-500 hover:bg-pink-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
+        <button className="bg-gradient-to-t from-pink-500 to-purple-400 hover:bg-pink-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
           Book a Ticket
         </button>
-        <button className="bg-amber-500 hover:bg-amber-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
+        <button className="bg-gradient-to-t from-rose-500 to-amber-300 hover:bg-amber-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
           Cancel Ticket
         </button>
-        <button className="bg-blue-500 hover:bg-blue-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
+        <button className="bg-gradient-to-t from-sky-700 to-pink-300 hover:bg-blue-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
           Generate Report
         </button>
       </motion.div>
