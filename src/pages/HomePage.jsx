@@ -1,8 +1,13 @@
 // Homepage.jsx
 import { motion } from "framer-motion";
-import { Film } from "lucide-react";
+import { Film, Link } from "lucide-react";
+import ViewMovies from "./ViewMovie";
+import { use } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Homepage() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex flex-col items-center justify-center px-4">
       {/* Hero Section */}
@@ -46,7 +51,10 @@ export default function Homepage() {
         transition={{ delay: 0.3 }}
         className="w-full max-w-md grid grid-cols-1 sm:grid-cols-2 gap-4"
       >
-        <button className="bg-gradient-to-t from-violet-600 to-green-300 hover:bg-purple-700 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
+        <button
+          className="bg-gradient-to-t from-violet-600 to-green-300 hover:bg-purple-700 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all"
+          onClick={() => navigate("/view")}
+        >
           View Movies
         </button>
         <button className="bg-gradient-to-t from-pink-500 to-purple-400 hover:bg-pink-600 text-white py-5 text-base font-medium rounded-xl shadow-lg transition-all">
